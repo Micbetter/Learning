@@ -15,7 +15,7 @@ public:
     //交换插入排序
     void sort_1(vector<int>& nums)
     {
-        for (size_t i = 0; i < nums.size(); i++)
+        for (size_t i = 1; i < nums.size(); i++)
         {
             for (size_t j = i; j > 0; j--)
             {
@@ -38,7 +38,7 @@ public:
     {
         for (size_t i = 0; i < nums.size(); i++)
         {
-            int j = i;
+            int j = i+1;
             int number = nums[i];
             for (; j > 0; j--)
             {
