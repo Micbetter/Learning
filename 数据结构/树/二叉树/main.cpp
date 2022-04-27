@@ -172,7 +172,7 @@ public:
                 q.pop();
                 if(node != nullptr)     //这里要注意，别忘了!!!!!
                 {
-                    temp.emplace_back(node->val);   
+                    temp.emplace_back(node->val);   //放在判断内部!!!!
                     if(node->left != nullptr || node->right != nullptr)  //只要不是两边都是空
                     {
                         q.push(node->left);
